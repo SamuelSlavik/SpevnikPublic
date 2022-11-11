@@ -45,6 +45,7 @@ function SidePanel(): JSX.Element {
                   type={"checkbox"}
                   id={"tag" + id}
                   className={"sidepanel__checkbox"}
+                  checked={(searchTags.some(((i:number) => i ==id)))}
                   onChange={event => {
                     if (event.target.checked) {
                       setSearchTags((searchTags:[]) => [...searchTags, id])
