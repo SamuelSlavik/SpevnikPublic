@@ -26,7 +26,6 @@ function SidePanel(): JSX.Element {
 
   return (
     <div className={"sidepanel"} id={"sidePanel"}>
-      <>toto je zmena</>
       <div className={"sidepanel__content"}>
         <div>
           <h2>Search by name: </h2>
