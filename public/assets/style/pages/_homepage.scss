@@ -1,0 +1,20 @@
+.songs {
+  width: 50%;
+  margin-left: 25%;
+
+  &__item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    p {
+      padding: 0;
+      margin: 1% 0 1% 0;
+    }
+  }
+  &__letter {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-top: 5%;
+  }
+}

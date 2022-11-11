@@ -1,0 +1,53 @@
+.login {
+  width: 50%;
+  margin-left: 25%;
+  padding-top: 10%;
+  font-size: 1em;
+
+  .input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: $white;
+    color: $black;
+    border-bottom: solid 1px $black;
+    padding: 2%;
+    margin-bottom: 7%;
+    font-size: 1em;
+    @include transition-default;
+
+    &:hover {
+      border-color: $color;
+    }
+    &:focus {
+      border-color: $color;
+    }
+    &:user-invalid {
+      background-color: #FF0000;
+    }
+  }
+  .submit {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: $white;
+    color: $black;
+    border-bottom: solid 1px $black;
+    padding: 2%;
+    margin-top: 10%;
+    font-size: 1em;
+    @include transition-default;
+
+    &:hover {
+      border-color: $color;
+      cursor: pointer;
+      color: $color;
+    }
+    &:focus {
+      border-color: $color;
+    }
+    &:user-invalid {
+      background-color: #FF0000;
+    }
+  }
+}

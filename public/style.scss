@@ -1,0 +1,21 @@
+@import "assets/style/helpers/variables";
+
+// Mixins
+@import "assets/style/mixins/transitions-mixin";
+@import "assets/style/mixins/lists-mixin";
+
+// Default style
+@import "assets/style/default";
+
+// Components
+
+
+// Layout
+@import "assets/style/layout/navigation";
+@import "assets/style/layout/sidepanel";
+
+// Pages
+@import "assets/style/pages/homepage";
+@import "assets/style/pages/login";
+
+
