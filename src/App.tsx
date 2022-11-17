@@ -10,6 +10,7 @@ import {toggleSidePanelOff} from "./functions/toggleSidePanel";
 import Homepage from "./pages/homepage/Homepage";
 import Navigation from "./components/Navigation";
 import Login from "./pages/login/Login";
+import Song from "./pages/song/Song";
 
 function App() {
   // ALL THE CONTEXT
@@ -61,6 +62,10 @@ function App() {
               path={"/login"}
               element={<Login />}
             />
+            <Route
+              path={"/song/:id"}
+              element={<Song />}
+            />
           </Routes>
         </SearchContext.Provider>
       </UserContext.Provider>
@@ -68,7 +73,7 @@ function App() {
         className={"sidepanel__overlay"}
         id={"sidePanelOverlay"}
         onClick={toggleSidePanelOff}
-      ></div>
+      ><></></div>
     </div>
   );
 }

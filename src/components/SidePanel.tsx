@@ -14,7 +14,7 @@ function SidePanel(): JSX.Element {
 
   useEffect(() => {
     axios
-      .get<Tags>(`http://spevnik.jakubcata.eu/api/tags`)
+      .get<Tags>(`https://api.spevnik.jakubcata.eu/api/tags`)
       .then((response: AxiosResponse) => {
         setAllTags(response.data)
       })

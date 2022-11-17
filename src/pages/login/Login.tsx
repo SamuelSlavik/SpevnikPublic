@@ -15,7 +15,7 @@ function Login(): JSX.Element {
       e.preventDefault();
       try {
         const loginRes = await Axios.post(
-          "http://spevnik.jakubcata.eu/api/login",
+          "https://api.spevnik.jakubcata.eu/api/login",
           {name, password}
         );
         setUserData({
